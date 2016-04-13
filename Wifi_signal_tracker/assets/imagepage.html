@@ -1,0 +1,46 @@
+<html>
+<head>
+<script src="jquery-1.12.0.min.js">
+</script>
+<script>
+$(document).ready(function(){
+var a=Android.getTop();
+var b=Android.getValue();
+	
+	$('#image').css({
+	
+	position: "absolute",
+	top: a,
+	left: b
+}).appendTo('body');
+
+$('#ap1').css({
+	position: "absolute",
+	top: 990,
+	left: 55
+}).appendTo('body');
+$('#ap2').css({
+	position: "absolute",
+	top: 820,
+	left: 310
+}).appendTo('body');
+$('#ap3').css({
+	position: "absolute",
+	top: 1150,
+	left: 360
+}).appendTo('body');
+
+});
+</script>
+</head>
+<body>
+
+<div style="position: relative; left: 0; top: 0;">
+  <img src="mypicture2.jpg" style="position: relative;"/>
+  <img id="image" src="marker.png"/>
+  <img id="ap1" src="AP1.jpg"/>
+  <img id="ap2" src="AP1.jpg"/>
+  <img id="ap3" src="AP1.jpg"/>
+</div>
+</body>
+</html>
